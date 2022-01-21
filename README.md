@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://helloextend-static-assets.s3.amazonaws.com/extend-shield-logo.png" />
-  <h1 align="center">Extend - Magento PWA Extension (frontend)</h1>
+  <h1 align="center">Extend - Magento PWA Extension for Dr. Ho's</h1>
 </p>
 
 Extend provides an easy way for any merchant to offer extended protection plans, generating new revenue, increasing purchase conversion, and dramatically improving the customer experience. 
@@ -23,7 +23,7 @@ Extend provides an easy way for any merchant to offer extended protection plans,
 
 ## Version Support
 - The module is built for Magento PWA Studio versions: 
-    - PWA Studio >=6.0.x
+    - PWA Studio 6.0.1
 
 ## Browser Support
 - Microsoft Edge, latest–1
@@ -46,7 +46,7 @@ Extend provides an easy way for any merchant to offer extended protection plans,
 ## Install via Yarn
 To install/update the extension with Yarn, the following commands must be executed:
 ```zsh
-$ yarn venia add https://github.com/helloextend/magento-pwa-frontend.git
+$ yarn venia add https://github.com/helloextend/magento-pwa-frontend.git#drHo
 $ yarn build
 ```
 

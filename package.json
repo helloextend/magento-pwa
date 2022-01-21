@@ -1,0 +1,44 @@
+{
+  "name": "@extend/warranty",
+  "description": "Extend Warranty extension for Dr. Ho's (Magento PWA Studio)",
+  "version": "1.0.0",
+  "author": "Extend Magento Team <magento@guidance.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./index.js",
+  "pwa-studio": {
+    "targets": {
+      "intercept": "lib/intercept.js"
+    }
+  },
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore \"lib/{*.js,package.json}\"",
+    "prettier": "prettier --loglevel warn --ignore-path .gitignore \"lib/*.@(css|graphql|js)\" \"*.js\"",
+    "prettier:check": "yarn run -s prettier -- --check",
+    "prettier:fix": "yarn run -s prettier -- --write"
+  },
+  "lint-staged": {
+    "./lib/*.{ts,js,jsx,tsx}": [
+      "yarn lint --fix",
+      "yarn format"
+    ]
+  },
+  "peerDependencies": {
+    "@magento/peregrine": "~6.0.0",
+    "@magento/pwa-buildpack": "~5.1.1",
+    "@magento/venia-ui": "~3.0.0",
+    "apollo-client": "2.6.4",
+    "graphql-tag": "~2.10.1",
+    "react": "~16.9.0"
+  },
+  "devDependencies": {
+    "eslint": "~5.14.1",
+    "prettier": "~1.16.4"
+  },
+  "engines": {
+    "node": ">=10.x",
+    "yarn": ">=1.12.0"
+  }
+}

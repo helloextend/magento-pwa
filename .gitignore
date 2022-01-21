@@ -1,0 +1,7 @@
+.idea
+.vscode
+node_modules
+dist
+yarn-error.log
+# Gradle
+.gradle/
